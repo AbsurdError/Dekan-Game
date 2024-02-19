@@ -287,7 +287,7 @@ renderEndGameStats();
 }
 
 let gameTime = new Date().getTime() - startTime; // Рассчитываем время игры
-if (gameTime >= 3 * 60 * 1000) { // Если время игры больше или равно 3 минутам
+if (gameTime >= 1.5 * 60 * 1000) { // Если время игры больше или равно 3 минутам
 isPaused = true; // Останавливаем игру
 context.clearRect(0, 0, canvas.width, canvas.height);
 context.font = "30px Arial";
